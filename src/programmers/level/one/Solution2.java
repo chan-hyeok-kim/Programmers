@@ -1,4 +1,4 @@
-package java.level.one;
+package programmers.level.one;
 
 public class Solution2 {
 	 public int solution(int[] a, int[] b) {

@@ -1,4 +1,4 @@
-package java.level.one;
+package programmers.level.one;
 
 
 class Solution1 {

@@ -1,4 +1,4 @@
-package java.level.one;
+package programmers.level.one;
 
 public class Solution4 {
 	public int[] solution(String s) {
@@ -20,3 +20,5 @@ public class Solution4 {
         return answer;
     }
 }
+
+//가장 가까운 같은 글자 위치만큼의 숫자 배열
