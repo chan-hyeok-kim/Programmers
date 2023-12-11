@@ -10,11 +10,16 @@ public class TestMain {
 		int[] answer=solution7.solution(5, sample);
 		
 		for(int a: answer) {
-			System.out.println(a);
+//			System.out.println(a);
 		}
 		
 		
+		Solution9 solution9=new Solution9();
+		String[] sample9={".#...", "..#..", "...#."};
+		int[] answer9=solution9.solution(sample9);
 		
-		
+		for(int a: answer9) {
+			System.out.println(a);
+		}
 	}
 }
