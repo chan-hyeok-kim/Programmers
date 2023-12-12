@@ -1,6 +1,6 @@
 package programmers.level.one;
 
-public class Solution4 {
+public class Solution04 {
 	public int[] solution(String s) {
         int[] answer = new int[s.length()];
  

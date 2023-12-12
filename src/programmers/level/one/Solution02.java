@@ -1,6 +1,6 @@
 package programmers.level.one;
 
-public class Solution2 {
+public class Solution02 {
 	 public int solution(int[] a, int[] b) {
 	        int answer = 0;
 	        

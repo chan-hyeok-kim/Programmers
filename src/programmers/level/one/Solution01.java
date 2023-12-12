@@ -1,7 +1,7 @@
 package programmers.level.one;
 
 
-class Solution1 {
+class Solution01 {
 	public String solution(String s) {
         String answer = "";
         

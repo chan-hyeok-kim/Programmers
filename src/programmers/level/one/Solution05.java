@@ -1,6 +1,6 @@
 package programmers.level.one;
 
-public class Solution5 {
+public class Solution05 {
 	public String[] solution(String[] strings, int n) {
         String[] answer = {};
         

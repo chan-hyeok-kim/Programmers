@@ -3,7 +3,7 @@ package programmers.level.one;
 
 import java.util.HashSet;
 
-public class Solution6 {
+public class Solution06 {
         public int solution(int[] nums) {
        
         HashSet<Integer> set=new HashSet<Integer>();

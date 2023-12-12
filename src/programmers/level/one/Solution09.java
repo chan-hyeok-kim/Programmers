@@ -3,7 +3,7 @@ package programmers.level.one;
 import java.util.Arrays;
 import java.util.List;
 
-public class Solution9 {
+public class Solution09 {
 	public int[] solution(String[] wallpaper) {
 		int n=wallpaper.length;
         int[] answer = new int[4];

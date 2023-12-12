@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Solution7 {
+public class Solution07 {
 	 public int[] solution(int N, int[] stages) {
 		    
 	        int[] answer = new int[N];
