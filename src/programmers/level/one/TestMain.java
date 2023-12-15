@@ -21,5 +21,10 @@ public class TestMain {
 		for(int a: answer9) {
 			System.out.println(a);
 		}
+		
+		long a=1953476600000L%10000000000L;
+		
+		System.out.println(a);
+		
 	}
 }
