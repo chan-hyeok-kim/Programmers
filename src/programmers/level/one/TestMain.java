@@ -19,12 +19,25 @@ public class TestMain {
 		int[] answer9=solution9.solution(sample9);
 		
 		for(int a: answer9) {
-			System.out.println(a);
+//			System.out.println(a);
 		}
 		
-		long a=1953476600000L%10000000000L;
+
 		
-		System.out.println(a);
+		Solution27 solution27=new Solution27();
+		int n=125;
+		solution27.solution(n);
+		
+		
+		Solution26 solution26=new Solution26();
+		int x=8;
+		int y=12;
+		int[] result=solution26.solution(x,y);
+		
+		for(int i=0; i<result.length; i++) {
+			System.out.println(result[i]);
+		}
+		
 		
 	}
 }
