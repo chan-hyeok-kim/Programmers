@@ -35,9 +35,19 @@ public class TestMain {
 		int[] result=solution26.solution(x,y);
 		
 		for(int i=0; i<result.length; i++) {
-			System.out.println(result[i]);
+//			System.out.println(result[i]);
 		}
 		
+		
+		Solution29 solution29=new Solution29();
+		String s="  TRy HElLo  WORLD    Mpmpco     ";
+		s=solution29.solution(s);
+//		System.out.println(s);
+		
+		Solution30 solution30=new Solution30();
+		int[] num= {-2, 3, 0, 2, -5};
+		int result30=solution30.solution(num);
+		System.out.println(result30);
 		
 	}
 }
