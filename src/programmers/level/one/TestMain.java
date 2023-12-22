@@ -47,7 +47,17 @@ public class TestMain {
 		Solution30 solution30=new Solution30();
 		int[] num= {-2, 3, 0, 2, -5};
 		int result30=solution30.solution(num);
-		System.out.println(result30);
+//		System.out.println(result30);
+		
+		Solution32 solution32=new Solution32();
+		int[] arr32= {10, 2};
+		int[][] commands32={{1, 2, 1}};
+		int[] answer32=solution32.solution(arr32, commands32);
+		
+		for(int a: answer32) {
+			System.out.print(a);
+		}
+		
 		
 	}
 }

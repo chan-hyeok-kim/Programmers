@@ -1,5 +1,7 @@
 package programmers.level.one;
 
+import java.util.function.Function;
+
 class Solution29 {
 	 public String solution(String s) {
 	        String answer="";
@@ -21,6 +23,8 @@ class Solution29 {
 	        }
 	        return answer;
 	    }
+	 
+	 
 	
 }
 //이상한 문자 만들기
