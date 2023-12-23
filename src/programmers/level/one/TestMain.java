@@ -1,5 +1,8 @@
 package programmers.level.one;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class TestMain {
 
 	public static void main(String[] args) {
@@ -55,8 +58,16 @@ public class TestMain {
 		int[] answer32=solution32.solution(arr32, commands32);
 		
 		for(int a: answer32) {
-			System.out.print(a);
+//			System.out.print(a);
 		}
+		
+		
+		Solution35 solution35=new Solution35();
+		int[] answer35= {1,3,5,9};
+		solution35.solution(answer35);
+		
+		List<String> list35=Arrays.asList(new String[]{"",""});
+		
 		
 		
 	}
