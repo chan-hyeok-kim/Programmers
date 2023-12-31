@@ -57,23 +57,27 @@ public class TestMain {
 		int[][] commands32={{1, 2, 1}};
 		int[] answer32=solution32.solution(arr32, commands32);
 		
-		for(int a: answer32) {
-//			System.out.print(a);
-		}
+
 		
 		
-		Solution35 solution35=new Solution35();
-		int[] answer35= {1,3,5,9};
-		solution35.solution(answer35);
-		
-		List<String> list35=Arrays.asList(new String[]{"",""});
-		
-		Solution38 solution38=new Solution38();
-		int a38=4;
-	    int n38=10;
-	    int b38=3;
-	    int answer38=solution38.solution(a38, b38, n38);
-	    System.out.println(answer38);
+//		Solution35 solution35=new Solution35();
+//		int[] answer35= {1,3,5,9};
+//		solution35.solution(answer35);
+//		
+//		List<String> list35=Arrays.asList(new String[]{"",""});
+//		
+//		Solution38 solution38=new Solution38();
+//		int a38=4;
+//	    int n38=10;
+//	    int b38=3;
+//	    int answer38=solution38.solution(a38, b38, n38);
+//	    System.out.println(answer38);
+	    
+	    Solution46 solution46=new Solution46();
+	    int n46=10;
+	    int result46=solution46.solution(n46);
+	    
+	    System.out.println(result46);
 		
 	}
 }

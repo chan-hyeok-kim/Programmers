@@ -7,8 +7,8 @@ class Solution38 {
         int rest=0;
         for(; n>0;){
         	n=n/a*b;
-        	System.out.println(rest);
-        	System.out.println(n);
+//        	System.out.println(rest);
+//        	System.out.println(n);
         	rest+=n%a;
             answer+=n;
             
