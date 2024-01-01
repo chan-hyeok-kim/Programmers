@@ -77,7 +77,15 @@ public class TestMain {
 	    int n46=10;
 	    int result46=solution46.solution(n46);
 	    
-	    System.out.println(result46);
+//	    System.out.println(result46);
 		
+	    Solution48 solution48=new Solution48();
+	    int n48=8;
+	    int m48=4;
+	    int[] section= {2,3,6};
+	    int result48=solution48.solution(n48, m48, section);
+	    
+	    System.out.println(result48);
+	    
 	}
 }
