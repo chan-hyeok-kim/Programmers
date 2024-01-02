@@ -85,7 +85,21 @@ public class TestMain {
 	    int[] section= {2,3,6};
 	    int result48=solution48.solution(n48, m48, section);
 	    
-	    System.out.println(result48);
+//	    System.out.println(result48);
+	    
+	    
+	    Solution49 solution49=new Solution49();
+	    int n49=5;
+	    int[] m49= {1,1,1,2,3,4};
+	    int[] result49=solution49.solution(n49, m49);
+	    
+	    for(int r:result49) {
+//	    	System.out.println(r);
+	    	//기댓값 [4, 1, 3, 2, 5]
+	    }
+	    
+	    
+	    
 	    
 	}
 }
