@@ -30,35 +30,37 @@ class Solution50 {
         }  
     	
         for(int i=0; i<3; i++) {
-        	int score=0;
+        	int[] score=new int[3];
+        	
         	if(scoreSet[i].length()==2) {
         		//상 없을때
         	   int initVal=Integer.parseInt(scoreSet[i]);
         	   
         	   if(scoreSet[i+1].equals("S")) {	
-        		  score+=initVal;
+        		  score[i]=initVal;
         	   }else if(scoreSet[i+1].equals("D")) {
-        		  score+=Math.pow(initVal, 2);
+        		  score[i]=(int) Math.pow(initVal, 2);
         	   }else{
-        		  score+=Math.pow(initVal, 3);
+        		  score[i]=(int) Math.pow(initVal, 3);
         	   }
         	   
         	}else {
         		//상 있을 때
+        	   int sc=0;
         	   int initVal=Integer.parseInt(scoreSet[i]);
          	   
          	   if(scoreSet[i+1].equals("S")) {	
-         		  score+=initVal;
+         		  sc=initVal;
          	   }else if(scoreSet[i+1].equals("D")) {
-         		  score+=Math.pow(initVal, 2);
+         		  sc=(int) Math.pow(initVal, 2);
          	   }else{
-         		  score+=Math.pow(initVal, 3);
+         		  sc=(int) Math.pow(initVal, 3);
          	   }
-         	   
+         	   score[i]=sc;
          	  if(scoreSet[i+2].equals("*")) {
-         		  score=score*2;
+         		    score[i]=score(score, i);
          	  }else{
-         		  score=score*2;
+         		    score[i]-=sc;
          	  }
          	  //점수를 또 배열선언해서 담은후에
          	  //i-1인 값에 마이너스 *2할 수 있게끔 설정하기
@@ -70,5 +72,17 @@ class Solution50 {
         
         return answer;
     }
+	
+	public int score(int[] score, int idx) {
+		int sum=0;
+		
+		if(idx<1) {
+			return sum;
+		}
+		idx--;
+		sum=(score[idx]+score(score, idx))*2;
+		
+		return sum;
+	}
 	
 }
