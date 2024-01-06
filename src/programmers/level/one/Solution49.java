@@ -26,10 +26,7 @@ class Solution49 {
 		        	failureRate=(double)failCount/(usersNum);	
 		        }
 		        map.put(i,failureRate);
-		        System.out.println("실패율==");
-     		System.out.println(failureRate);
-     		System.out.println(failCount);
-     		System.out.println("==실패율");
+		     
 		        usersNum-=failCount;
 	        }
 	        

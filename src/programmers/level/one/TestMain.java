@@ -99,7 +99,18 @@ public class TestMain {
 	    }
 	    
 	    
+	    Solution55 solution55=new Solution55();
+	    int n55=5;
+	    int[] lost55 = {2, 3, 4};
+	    int[] reserve55 = {3, 4, 5};
+	    int result55=solution55.solution(n55, lost55, reserve55);
 	    
+	    Solution56 solution56=new Solution56();
+	    int n56=4;
+	    int[] lost56 = {2, 3};
+	    int[] reserve56 = {3, 4};
+	    int result56=solution56.solution(n56, lost56, reserve56);
+	    System.out.println(result56);
 	    
 	}
 }
