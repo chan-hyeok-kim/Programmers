@@ -14,9 +14,11 @@ public class Solution16 {
                break;
             }else if(str_list[i].equals("r")){
                answer=new String[str_list.length-i-1]; 
-                
-               for(int j=i; j<str_list.length; j++){
-                   answer[j]=str_list[j];
+               
+               int idx=0;
+               for(int j=i+1; j<str_list.length; j++){
+                   answer[idx]=str_list[j];
+                   idx++;
                } 
                 
                break;
