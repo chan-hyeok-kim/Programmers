@@ -20,4 +20,7 @@ public class Solution21 {
         return answer;
     }
 }
-//자바 11부터 추가된 String의 repeat()메서드 활용하면 좋을 듯
+
+//자바 11부터 추가된 String의 repeat()메서드 활용하면 더 쉽게 풀 수 있음
+//미처 생각하지 못하고 for문으로만 품
+
