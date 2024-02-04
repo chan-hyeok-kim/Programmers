@@ -26,8 +26,6 @@ public class Main3009 {
 			st=new StringTokenizer(br.readLine()," ");
 			 x[i]=Integer.parseInt(st.nextToken());
 			 y[i]=Integer.parseInt(st.nextToken());
-			
-			
 		}
 		
 	    int missingX = 0, missingY = 0;

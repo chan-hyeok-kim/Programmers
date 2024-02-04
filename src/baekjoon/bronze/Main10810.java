@@ -4,37 +4,51 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.StringTokenizer;
 
 public class Main10810 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
-	    StringBuilder[] sb=new StringBuilder[2];
+	    StringBuilder sb=new StringBuilder();
 		StringTokenizer st;
-		sb[0] = new StringBuilder(); 
-        sb[1] = new StringBuilder();
+		
 		/*
-		 *  1
+		 *  5 4    ->총 바구니수, m번 공,m개의 줄
+			1 2 3
+			3 4 4
+			1 4 1
+			2 2 2
 		 */
 	    
-	    
-	    int max=0;
-	    int order=0;
-		for(int i=0; i<9; i++) {
-			st=new StringTokenizer(br.readLine());
-			int num=Integer.parseInt(st.nextToken());
-			if(num>max) {
-				max=num;
-				order=i+1;
-			}
-		}
-		sb[0].append(max);
-		sb[1].append(order);
-		bw.write(String.valueOf(sb[0]));
-		bw.newLine();
-		bw.write(String.valueOf(sb[1]));
-		
+        st=new StringTokenizer(br.readLine()," ");
+	    int basket=Integer.parseInt(st.nextToken());
+	    int m=Integer.parseInt(st.nextToken());
+
+        Map<Integer, Integer> map=new HashMap<Integer, Integer>();
+        
+        for(int i=0; i<m; i++) {
+        	st=new StringTokenizer(br.readLine()," ");
+        	int start=Integer.parseInt(st.nextToken());
+        	int end=Integer.parseInt(st.nextToken());
+        	int k=Integer.parseInt(st.nextToken());
+        	
+	        for(int j=start; j<=end; j++) {
+	        	map.put(j, k);
+	        }
+        }
+        
+        for(int i=1; i<=basket; i++) {
+        	if(map.get(i)==null) {
+        		sb.append(0).append(" ");
+            }else {
+            	sb.append(map.get(i)).append(" ");
+        	}
+        }
+        
+		bw.write(String.valueOf(sb));
 		bw.flush();
 		bw.close();
 		
